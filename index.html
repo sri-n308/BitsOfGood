@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Sriteja's Card</title>
+    </head>
+    <body>
+        <img src="cardPFP.PNG" class = "image">
+        <div class = "introduction">
+            Hi!
+            
+        </div>
+        <div class = "buttonContainer">
+            <div class = "twitterButton">
+                <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
+                   <img src="twitterLogo.PNG" class = "iconTWT">
+                </a>
+            </div>
+            <div class = "instagramButton">
+                <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
+                    <img src="instagramLogo.PNG" class = "iconIG">
+                </a>
+            </div>
+        </div>
+        <div class = "torch" id = "tor"> Thanks for reading! :)</div>
+        
+        <script>
+            colors = new Array ("red", "orange", "green", "blue", "indigo", "violet");
+            index = 0;
+            function changeColor() {
+                document.getElementById("tor").style.backgroundColor = colors[index];
+                index = (index + 1) % 7;
+            }
+            function begin(){
+                setInterval("changeColor()",250);
+            }
+            window.onload = begin;
+        </script>
+    </body>
+</html>
